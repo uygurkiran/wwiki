@@ -1,4 +1,4 @@
-# wwiki
+# wwiki (for watchOS)
 
 ![11](https://user-images.githubusercontent.com/11250400/94216720-c5a4c880-fee8-11ea-8a2d-975d8dc31b2b.png)
 ![22](https://user-images.githubusercontent.com/11250400/94216723-c76e8c00-fee8-11ea-92ed-34d148b80c8d.png)
