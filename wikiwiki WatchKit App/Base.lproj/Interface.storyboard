@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--InputIC-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InputIC" customModule="wwiki" customModuleProvider="target">
+                    <items>
+                        <button alignment="center" verticalAlignment="center" id="qKm-EH-pd8">
+                            <group key="contentGroup" width="1" height="0.84999999999999998" alignment="left" backgroundImage="mic" contentMode="scaleAspectFit" id="trP-eL-krW"/>
+                            <connections>
+                                <action selector="micTapped" destination="AgC-eL-Hgc" id="FgJ-af-cav"/>
+                            </connections>
+                        </button>
+                        <button alignment="center" verticalAlignment="center" backgroundImage="gear" catalog="system" id="7Sw-6B-z0a">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="settingsTapped" destination="AgC-eL-Hgc" id="pRh-Cf-rnG"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="micButton" destination="qKm-EH-pd8" id="JN6-Mx-x07"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="29"/>
+        </scene>
+        <!--settings-->
+        <scene sceneID="6K4-Ws-Frd">
+            <objects>
+                <controller identifier="settings" fullBounds="YES" id="NnI-DZ-V00" customClass="SettingsIC" customModule="wikiwiki_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Choose Language:" textAlignment="left" id="h8C-BY-1ny">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <picker height="100" alignment="center" id="pfA-RI-Rhn">
+                            <connections>
+                                <action selector="pickerAction:" destination="NnI-DZ-V00" id="Eos-BB-B0N"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="DONE" id="PDl-h8-a6i">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="backgroundColor" red="0.99996763470000005" green="0.7490554452" blue="0.29018819330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                            <connections>
+                                <action selector="doneTapped" destination="NnI-DZ-V00" id="AHy-mb-pC2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="doneBtn" destination="PDl-h8-a6i" id="Fh3-H0-Mpl"/>
+                        <outlet property="picker" destination="pfA-RI-Rhn" id="BEd-5j-8LC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="380"/>
+        </scene>
+        <!--Close-->
+        <scene sceneID="L76-eU-3G5">
+            <objects>
+                <controller identifier="result" title="Close" alwaysBounce="YES" id="1Mq-jT-0tb" customClass="OutputIC" customModule="wikiwiki_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" alignment="center" id="bUo-me-ife"/>
+                        <label width="1" alignment="left" text="something happened." numberOfLines="0" id="eCX-w3-UhR"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="bUo-me-ife" id="aCe-Sb-sYR"/>
+                        <outlet property="label" destination="eCX-w3-UhR" id="cbA-fY-KRs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="422" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="118"/>
+        <image name="mic" width="500" height="500"/>
+    </resources>
+</document>

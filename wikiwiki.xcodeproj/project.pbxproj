@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1463196724DF6065003F71ED /* wwiki.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1463196624DF6065003F71ED /* wwiki.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1463196D24DF6065003F71ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1463196B24DF6065003F71ED /* Interface.storyboard */; };
+		1463196F24DF6066003F71ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1463196E24DF6066003F71ED /* Assets.xcassets */; };
+		1463197624DF6066003F71ED /* wikiwiki WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1463197524DF6066003F71ED /* wikiwiki WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1463197B24DF6066003F71ED /* InputIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463197A24DF6066003F71ED /* InputIC.swift */; };
+		1463197D24DF6066003F71ED /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463197C24DF6066003F71ED /* ExtensionDelegate.swift */; };
+		1463197F24DF6066003F71ED /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463197E24DF6066003F71ED /* ComplicationController.swift */; };
+		1463198124DF6067003F71ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1463198024DF6067003F71ED /* Assets.xcassets */; };
+		1463199124DF60D0003F71ED /* OutputIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463199024DF60D0003F71ED /* OutputIC.swift */; };
+		14D494F524E03031001AAD64 /* SettingsIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D494F424E03031001AAD64 /* SettingsIC.swift */; };
+		17AB3CA13EC49A689C75530F /* Pods_wikiwiki_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA5EC245F549911859426E7 /* Pods_wikiwiki_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1463196824DF6065003F71ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1463195C24DF6065003F71ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1463196524DF6065003F71ED;
+			remoteInfo = "wikiwiki WatchKit App";
+		};
+		1463197724DF6066003F71ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1463195C24DF6065003F71ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1463197424DF6066003F71ED;
+			remoteInfo = "wikiwiki WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1463198824DF6067003F71ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1463197624DF6066003F71ED /* wikiwiki WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1463198C24DF6067003F71ED /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1463196724DF6065003F71ED /* wwiki.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1463196224DF6065003F71ED /* wwiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wwiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1463196624DF6065003F71ED /* wwiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wwiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1463196C24DF6065003F71ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1463196E24DF6066003F71ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1463197024DF6066003F71ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1463197524DF6066003F71ED /* wikiwiki WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "wikiwiki WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1463197A24DF6066003F71ED /* InputIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputIC.swift; sourceTree = "<group>"; };
+		1463197C24DF6066003F71ED /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1463197E24DF6066003F71ED /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1463198024DF6067003F71ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1463198224DF6067003F71ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1463199024DF60D0003F71ED /* OutputIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputIC.swift; sourceTree = "<group>"; };
+		14D494F424E03031001AAD64 /* SettingsIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIC.swift; sourceTree = "<group>"; };
+		3EA5EC245F549911859426E7 /* Pods_wikiwiki_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikiwiki_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451906796281896FD2C82535 /* Pods-wikiwiki WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikiwiki WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-wikiwiki WatchKit Extension/Pods-wikiwiki WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F3B5B496B255218779E1B712 /* Pods-wikiwiki WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikiwiki WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-wikiwiki WatchKit Extension/Pods-wikiwiki WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1463197224DF6066003F71ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17AB3CA13EC49A689C75530F /* Pods_wikiwiki_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166B85505C8411891274C0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABFF5D19A7BFCA4719938CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1463195B24DF6065003F71ED = {
+			isa = PBXGroup;
+			children = (
+				1463196A24DF6065003F71ED /* wikiwiki WatchKit App */,
+				1463197924DF6066003F71ED /* wikiwiki WatchKit Extension */,
+				1463196324DF6065003F71ED /* Products */,
+				B69F76232856E8E63B66E8AE /* Pods */,
+				44EB19B2DDAEEAD1F65E7EF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1463196324DF6065003F71ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1463196224DF6065003F71ED /* wwiki.app */,
+				1463196624DF6065003F71ED /* wwiki.app */,
+				1463197524DF6066003F71ED /* wikiwiki WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1463196A24DF6065003F71ED /* wikiwiki WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1463196B24DF6065003F71ED /* Interface.storyboard */,
+				1463196E24DF6066003F71ED /* Assets.xcassets */,
+				1463197024DF6066003F71ED /* Info.plist */,
+			);
+			path = "wikiwiki WatchKit App";
+			sourceTree = "<group>";
+		};
+		1463197924DF6066003F71ED /* wikiwiki WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1463197A24DF6066003F71ED /* InputIC.swift */,
+				1463199024DF60D0003F71ED /* OutputIC.swift */,
+				14D494F424E03031001AAD64 /* SettingsIC.swift */,
+				1463197C24DF6066003F71ED /* ExtensionDelegate.swift */,
+				1463197E24DF6066003F71ED /* ComplicationController.swift */,
+				1463198024DF6067003F71ED /* Assets.xcassets */,
+				1463198224DF6067003F71ED /* Info.plist */,
+			);
+			path = "wikiwiki WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		44EB19B2DDAEEAD1F65E7EF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EA5EC245F549911859426E7 /* Pods_wikiwiki_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B69F76232856E8E63B66E8AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				451906796281896FD2C82535 /* Pods-wikiwiki WatchKit Extension.debug.xcconfig */,
+				F3B5B496B255218779E1B712 /* Pods-wikiwiki WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1463196124DF6065003F71ED /* wikiwiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1463198D24DF6067003F71ED /* Build configuration list for PBXNativeTarget "wikiwiki" */;
+			buildPhases = (
+				1463196024DF6065003F71ED /* Resources */,
+				1463198C24DF6067003F71ED /* Embed Watch Content */,
+				5ABFF5D19A7BFCA4719938CE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1463196924DF6065003F71ED /* PBXTargetDependency */,
+			);
+			name = wikiwiki;
+			productName = wikiwiki;
+			productReference = 1463196224DF6065003F71ED /* wwiki.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		1463196524DF6065003F71ED /* wikiwiki WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1463198924DF6067003F71ED /* Build configuration list for PBXNativeTarget "wikiwiki WatchKit App" */;
+			buildPhases = (
+				1463196424DF6065003F71ED /* Resources */,
+				1463198824DF6067003F71ED /* Embed App Extensions */,
+				166B85505C8411891274C0DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1463197824DF6066003F71ED /* PBXTargetDependency */,
+			);
+			name = "wikiwiki WatchKit App";
+			productName = "wikiwiki WatchKit App";
+			productReference = 1463196624DF6065003F71ED /* wwiki.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1463197424DF6066003F71ED /* wikiwiki WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1463198524DF6067003F71ED /* Build configuration list for PBXNativeTarget "wikiwiki WatchKit Extension" */;
+			buildPhases = (
+				0A0C457BC8FF8528DA9D7097 /* [CP] Check Pods Manifest.lock */,
+				1463197124DF6066003F71ED /* Sources */,
+				1463197224DF6066003F71ED /* Frameworks */,
+				1463197324DF6066003F71ED /* Resources */,
+				02A1F044F9D18F467F88DD64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wikiwiki WatchKit Extension";
+			productName = "wikiwiki WatchKit Extension";
+			productReference = 1463197524DF6066003F71ED /* wikiwiki WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1463195C24DF6065003F71ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Uygur Kıran";
+				TargetAttributes = {
+					1463196124DF6065003F71ED = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					1463196524DF6065003F71ED = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					1463197424DF6066003F71ED = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 1463195F24DF6065003F71ED /* Build configuration list for PBXProject "wikiwiki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1463195B24DF6065003F71ED;
+			productRefGroup = 1463196324DF6065003F71ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1463196124DF6065003F71ED /* wikiwiki */,
+				1463196524DF6065003F71ED /* wikiwiki WatchKit App */,
+				1463197424DF6066003F71ED /* wikiwiki WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1463196024DF6065003F71ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1463196424DF6065003F71ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1463196F24DF6066003F71ED /* Assets.xcassets in Resources */,
+				1463196D24DF6065003F71ED /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1463197324DF6066003F71ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1463198124DF6067003F71ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A1F044F9D18F467F88DD64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wikiwiki WatchKit Extension/Pods-wikiwiki WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wikiwiki WatchKit Extension/Pods-wikiwiki WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wikiwiki WatchKit Extension/Pods-wikiwiki WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A0C457BC8FF8528DA9D7097 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wikiwiki WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1463197124DF6066003F71ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1463197D24DF6066003F71ED /* ExtensionDelegate.swift in Sources */,
+				1463197B24DF6066003F71ED /* InputIC.swift in Sources */,
+				14D494F524E03031001AAD64 /* SettingsIC.swift in Sources */,
+				1463199124DF60D0003F71ED /* OutputIC.swift in Sources */,
+				1463197F24DF6066003F71ED /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1463196924DF6065003F71ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1463196524DF6065003F71ED /* wikiwiki WatchKit App */;
+			targetProxy = 1463196824DF6065003F71ED /* PBXContainerItemProxy */;
+		};
+		1463197824DF6066003F71ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1463197424DF6066003F71ED /* wikiwiki WatchKit Extension */;
+			targetProxy = 1463197724DF6066003F71ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1463196B24DF6065003F71ED /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1463196C24DF6065003F71ED /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1463198324DF6067003F71ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1463198424DF6067003F71ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1463198624DF6067003F71ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451906796281896FD2C82535 /* Pods-wikiwiki WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 7W9J4US56D;
+				INFOPLIST_FILE = "wikiwiki WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.uygur.wikiwiki.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "wikiwiki WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		1463198724DF6067003F71ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B5B496B255218779E1B712 /* Pods-wikiwiki WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 7W9J4US56D;
+				INFOPLIST_FILE = "wikiwiki WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.uygur.wikiwiki.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "wikiwiki WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		1463198A24DF6067003F71ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 7W9J4US56D;
+				IBSC_MODULE = wikiwiki_WatchKit_Extension;
+				INFOPLIST_FILE = "wikiwiki WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.uygur.wikiwiki.watchkitapp;
+				PRODUCT_NAME = wwiki;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		1463198B24DF6067003F71ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 7W9J4US56D;
+				IBSC_MODULE = wikiwiki_WatchKit_Extension;
+				INFOPLIST_FILE = "wikiwiki WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.uygur.wikiwiki.watchkitapp;
+				PRODUCT_NAME = wwiki;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		1463198E24DF6067003F71ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 7W9J4US56D;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.uygur.wikiwiki;
+				PRODUCT_NAME = wwiki;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1463198F24DF6067003F71ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 7W9J4US56D;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.uygur.wikiwiki;
+				PRODUCT_NAME = wwiki;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1463195F24DF6065003F71ED /* Build configuration list for PBXProject "wikiwiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1463198324DF6067003F71ED /* Debug */,
+				1463198424DF6067003F71ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1463198524DF6067003F71ED /* Build configuration list for PBXNativeTarget "wikiwiki WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1463198624DF6067003F71ED /* Debug */,
+				1463198724DF6067003F71ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1463198924DF6067003F71ED /* Build configuration list for PBXNativeTarget "wikiwiki WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1463198A24DF6067003F71ED /* Debug */,
+				1463198B24DF6067003F71ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1463198D24DF6067003F71ED /* Build configuration list for PBXNativeTarget "wikiwiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1463198E24DF6067003F71ED /* Debug */,
+				1463198F24DF6067003F71ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1463195C24DF6065003F71ED /* Project object */;
+}
